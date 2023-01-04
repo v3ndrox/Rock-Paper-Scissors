@@ -12,6 +12,43 @@ function getComputerChoice() {
   } else return "scissors";
 }
 
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+
+rock.addEventListener("click", () => {
+  let cpChoice = getComputerChoice();
+  if (cpChoice === "rock") {
+    console.log("Draw");
+  } else if (cpChoice === "scissors") {
+    console.log("Win");
+  } else {
+    console.log("Lose");
+  }
+});
+
+paper.addEventListener("click", () => {
+  let cpChoice = getComputerChoice();
+  if (cpChoice === "paper") {
+    console.log("Draw");
+  } else if (cpChoice === "rock") {
+    console.log("Win");
+  } else {
+    console.log("Lose");
+  }
+});
+
+scissors.addEventListener("click", () => {
+  let cpChoice = getComputerChoice();
+  if (cpChoice === "scissors") {
+    console.log("Draw");
+  } else if (cpChoice === "paper") {
+    console.log("Win");
+  } else {
+    console.log("Lose");
+  }
+});
+
 let playerCount = 0;
 let computerCount = 0;
 
