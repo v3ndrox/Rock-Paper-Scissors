@@ -2,6 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .container {
@@ -12,11 +13,24 @@ html {
 }
 
 .section {
-  padding: 5em 10em;
-  text-align: center;
-  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 8em;
+  width: 500px;
+  height: 250px;
   background-color: rgb(243, 239, 232);
   border: 1px solid black;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.gameCon {
+  text-align: center;
+}
+
+.gameBtns {
+  text-align: center;
+  position: relative;
 }
 
 .rps {
@@ -24,7 +38,7 @@ html {
   color: black;
   border: 1px solid black;
   padding: 10px 16px;
-  margin: 1em 1em;
+  margin: 0.5em 0.5em;
 }
 
 .rps:hover {
@@ -63,4 +77,29 @@ html {
 
 .restart:active {
   background-color: rgb(121, 184, 247);
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.disabled,
+.disabled:hover,
+.disabled:active {
+  background-color: rgb(181, 181, 181);
+}
+
+.win {
+  color: green;
+  background-color: red;
+}
+
+#roundResult {
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 20px 0;
 }

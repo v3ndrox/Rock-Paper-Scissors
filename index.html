@@ -9,19 +9,31 @@
   <body>
     <div class="container">
       <div class="section">
-        <div>
-          <h3 id="roundResult">You...</h3>
+        <h2 style="text-align: center; margin: 0; padding: 0">
+          Rock-Paper-Scissors
+        </h2>
+        <div class="gameCon">
+          <h3 id="roundResult">Start the game to play</h3>
           <button class="rps" id="rock">Rock</button>
           <button class="rps" id="paper">Paper</button>
           <button class="rps" id="scissors">Scissors</button>
         </div>
-        <div>
-          <button class="start">Start Game</button>
-          <button class="restart">Restart Game</button>
+        <div class="gameBtns">
+          <button class="start" id="start">Start Game</button>
+          <button class="restart" id="restart">Restart Game</button>
+        </div>
+        <div class="score">
+          <div style="margin: 1em 2em">
+            <span id="playerScore">0</span>
+            <div>You</div>
+          </div>
+          <div style="margin: 1em 2em">
+            <span id="pcScore">0</span>
+            <div>PC</div>
+          </div>
         </div>
       </div>
     </div>
-
     <script src="app.js"></script>
   </body>
 </html>
